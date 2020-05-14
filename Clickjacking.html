@@ -1,0 +1,26 @@
+<html>
+   <head>
+    <title>Clickjacking POC</title>
+	<script>
+	function Functioncall() 
+	{
+		url = document.getElementById('URL').value;
+		url = url.replace(/^http:\/\//, '');
+		url = url.replace(/^https:\/\//, '');
+		url = "https://" + url;
+		document.getElementById('iframe').src = url;
+	};
+	</script>
+	</head>
+	<body align="center">
+		<p><input type="text" placeholder="Enter Website URL" id="URL" size="50%"/>
+		<input type="button" id="button" value="Load Website" onclick="Functioncall()" /></p>
+		<hr/>
+		<iframe id="iframe" src="" width="90%" height="90%"></iframe>
+	</body>
+</html>
+
+
+
+
+
