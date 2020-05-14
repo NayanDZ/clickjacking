@@ -6,7 +6,7 @@ Clickjacking  is a technique of tricking a Web user into clicking on something d
 
 ## Observation
 
-If server didn't return an X-Frame-Options header which means that this website could be at risk of a clickjacking attack.
+If server didn't return an **X-Frame-Options** header which means that this website could be at risk of a clickjacking attack.
 
 ## POC-Code
 ```javascript
@@ -15,7 +15,6 @@ If server didn't return an X-Frame-Options header which means that this website 
      <title>Clickjack POC</title>
    </head>
    <body>
-     <p>Website is vulnerable to clickjacking!</p>
      <iframe src="https://websiteurl.com" width="1000" height="500"></iframe>
    </body>
 </html>
