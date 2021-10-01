@@ -1,10 +1,8 @@
 # Clickjacking
 
-## Information
-
 Clickjacking  is a technique of tricking a Web user into clicking on something different.
 
-## Observation
+## 🔎 Observation
 
 If server didn't return an **X-Frame-Options** header which means that this website could be at risk of a clickjacking attack.
 
